@@ -6,7 +6,7 @@ function randNum(max) {
     return Math.floor(Math.random() * max)
 }
 
-var Pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/1`)
+var Pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${randNum(1000)}`)
     .then(response => response.json()) 
     
 function Card({onClick}){
@@ -15,7 +15,7 @@ function Card({onClick}){
             <div className='card-back'></div>
             <div className='card-front'>
                 <div className='pokeInfo'>
-                    <img className='img' alt="pokesprite" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png`}/>
+                    <img className='img' alt="pokesprite" src={Pokemon.sprites.front_default}/>
                     <h1 className='PokeName'>{Pokemon.name.toUpperCase()}</h1>
                     <h3 className='PokeType'>{Pokemon.types[0].type.name.toUpperCase()}</h3>
                     <h3 className='moveKeeper'>Moves:</h3>
