@@ -9,7 +9,7 @@
     position: relative;
 
     /* === Styling === */
-    border-radius: 10px;
+    border-radius: 20px;
     border: 5px solid white;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8)
 }
@@ -33,10 +33,55 @@
 }
 
 .card-front {
-    background-color: #73d0ff;
+    background-color: white;
     transform: rotateY(180deg);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-back {
-    background-color: #ffad66;
+    border-radius: 13px;
+  background: url(./pokeCardBack.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
+.pokeInfo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.listedMoves {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.q1, .q2, .q3, .q4 {
+    width: 50%;
+}
+
+
+.moveKeeper{
+    margin-left: 125px;
+}
+.img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-self: center;;
+}
+
+.PokeName {
+    align-self: center;
+}
+
+.PokeType {
+    align-self: center;
+}
+

@@ -10,7 +10,7 @@ function FlippableCard() {
         <div className="flippable-card-container">
             <CSSTransition
                 in={showFront}
-                timeout={300}
+                timeout={1000}
                 classNames='flip'
             >
                 <Card onClick={() => {
