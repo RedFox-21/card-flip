@@ -52,36 +52,49 @@
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    position: absolute;
+    padding-bottom: 50%;
+    
+    
 }
 
 .listedMoves {
-    width: 50%;
+    width: 120%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    padding-bottom: 25px;
+    align-self: center;
+    position: absolute;
+    padding-top: 80%;
 }
 
 .q1, .q2, .q3, .q4 {
-    width: 50%;
+    width: 35%;
+    border: 1px solid black;
+    margin:2px;
+    padding: 2px;
+    text-align: center;
+    align-content: center;
 }
 
-
-.moveKeeper{
-    margin-left: 125px;
-}
 .img {
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     display: flex;
-    align-self: center;;
+    align-self: center;
+    margin-bottom: 0;
 }
 
 .PokeName {
     align-self: center;
+    font-size: medium;
 }
 
 .PokeType {
     align-self: center;
+    font-size: small;
 }
 
